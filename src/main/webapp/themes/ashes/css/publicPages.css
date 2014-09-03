@@ -34,13 +34,14 @@ white-space: nowrap;
 header {
 	min-height: 80px;
 	padding-top: 13px;
+	border-bottom: none;
 }
 
 footer {
 	padding:20px 30px 50px;
 	color:#cccccc;
 	background:#333333;
-	border-top:5px solid #eaeaea;
+	margin-top: 20px;
 }
 #foot_links,
 #foot_copy {
@@ -87,20 +88,9 @@ main > div a, main > div a:visited {
 .main-row {
 background-color: #fefefe;
 padding-bottom: 25px;
-overflow-y: hidden;
+border-radius: 10px;
 }
 
-nav#context {
-	white-space: normal;
-padding-left: 0;
-padding-right: 0;
-padding-top: 20px;
-background: #f5f6f7;
-white-space: nowrap;
-vertical-align: top;
-clear: left;
-max-width: 250px;
-}
 
 .logo-container {
 	max-width: 250px;
@@ -1697,8 +1687,6 @@ a.info-title { text-decoration: none; font: 13px "Trebuchet MS", Georgia, Arial,
 	.noticias, .eventos, .campus { font: bold 14pt "Trebuchet MS", Arial, Helvetica, sans-serif; color: #333; padding: 0 0 0 5px; height: 25px; }
 	.info_cell_holder { font: 11pt  Arial, Helvetica, sans-serif; color: #333; vertical-align: top; border-right: 1pt solid #ccc; padding: 5px 10px 5px 10px; }
 	.info_cell_holder_nobrd { font: 11pt Arial, Helvetica, sans-serif; color: #333; vertical-align: top; padding: 5px 10px 5px 10px; }
-
-	#footer * { display: none; }
 
 	.col_left { margin: 0 10px 0 0; }
 	.col_right, .col_right_photo{ float: right; width: 150px; margin: 30px; }

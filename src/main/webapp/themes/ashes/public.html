@@ -120,7 +120,7 @@
 			</div>
 		</header>
 
-		<div class="row perf_nav">
+		<div class="row perf_nav hide">
 			<div class="col-sm-2 logo-container"></div>
 			<ul class="col-sm-10">
 				<li><a href="https://tecnico.ulisboa.pt/">{{i18n('resources.GlobalResources', 'link.home')}}</a></li>
@@ -134,16 +134,7 @@
 		</div>
 
 		<div class="row main-row">
-			<nav class="col-sm-2" id="context">
-				<ul>
-					<li><a href="http://tecnico.ulisboa.pt/html/instituto/">{{i18n('resources.GlobalResources', 'label.institution')}}</a></li>
-					<li><a href="http://tecnico.ulisboa.pt/html/estrutura/">{{i18n('resources.GlobalResources', 'label.structure')}}</a></li>
-					<li><a href="http://tecnico.ulisboa.pt/html/ensino/">{{i18n('resources.GlobalResources', 'label.education')}}</a></li>
-					<li><a href="http://tecnico.ulisboa.pt/html/id/">{{i18n('resources.GlobalResources', 'label.research.and.development.acronyms')}}</a></li>
-					<li><a href="http://tecnico.ulisboa.pt/html/viverist/">{{i18n('resources.FenixIstResources', 'label.life.at.ist')}}</a></li>
-				</ul>
-			</nav>
-			<main class="col-sm-10">
+			<main class="col-sm-9">
 				<span class="pull-right">
 					{% for locale in locales %}
 						<a href="" class="locale-changer {% if locale == currentLocale %}active{% endif %}" title="{{locale.displayName}}" onclick="setLang('{{locale}}')">{{locale.language}}</a>
@@ -153,6 +144,15 @@
 					{{body}}
 				</div>
 			</main>
+			<nav class="col-sm-3">
+				<ul>
+					<li><a href="http://tecnico.ulisboa.pt/html/instituto/">{{i18n('resources.GlobalResources', 'label.institution')}}</a></li>
+					<li><a href="http://tecnico.ulisboa.pt/html/estrutura/">{{i18n('resources.GlobalResources', 'label.structure')}}</a></li>
+					<li><a href="http://tecnico.ulisboa.pt/html/ensino/">{{i18n('resources.GlobalResources', 'label.education')}}</a></li>
+					<li><a href="http://tecnico.ulisboa.pt/html/id/">{{i18n('resources.GlobalResources', 'label.research.and.development.acronyms')}}</a></li>
+					<li><a href="http://tecnico.ulisboa.pt/html/viverist/">{{i18n('resources.FenixIstResources', 'label.life.at.ist')}}</a></li>
+				</ul>
+			</nav>
 		</div>
 
 		<footer class="row">
